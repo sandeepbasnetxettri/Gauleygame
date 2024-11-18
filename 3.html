@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashim Shakya - Art Diverged By The Five Senses, Unified</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Noise texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/png;base64,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');
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo-symbol {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .logo-symbol::before {
+            content: 'X';
+            font-size: 20px;
+        }
+
+        .logo-symbol::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            width: 2px;
+            height: 20px;
+            background: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #888;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            color: #888;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1;
+            background: #222;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .see-more-btn {
+            background-color: #00d9ff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .see-more-btn:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <div class="logo-symbol"></div>
+                <span>ASHIM SHAKYA</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="2.html">Home</a></li>
+                    <li><a href="2.html">About Us</a></li>
+                    <li><a href="2.html">Contact</a></li>
+                    <li><a href="https://ashimshakya.itch.io/">Game</a></li>
+                    <li><a href="3.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>ASHIM SHAKYA</h1>
+                <p>ART DIVERGED BY THE FIVE SENSES, UNIFIED</p>
+            </div>
+        </section>
+        <a href="https://www.youtube.com/channel/UCRvEceX8y9VDYHIS07YdzzA" class="see-more-btn">Subscribed Ashim</a>
+
+        <section id="artworks" class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="imga/1.png" alt="Artistic Violin">
+                    <div class="portfolio-overlay">
+                        <h3>Gauley </h3>
+                        <p>Gauley ( गाउंले ) : Early Access
+                            Explore the vibrant magic of Nepal.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imga/2.png" alt="Sculptural Face">
+                    <div class="portfolio-overlay">
+                        <h3>Gopu </h3>
+                        <p>Gopu is an Open-world Adventure game by solo developer and artist Ashim Shakya.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imga/3.png" alt="Musical Figure">
+                    <div class="portfolio-overlay">
+                        <h3>Didi</h3>
+                        <p>Didi : Nepali PC Horror Game
+
+                            Just when your dreams are settled, destiny calls for you..</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imga/4.png" alt="Musical Figure">
+                    <div class="portfolio-overlay">
+                        <h3>Flight</h3>
+                        <p>Meditative Flight with dynamic time of day and weather.</p>
+                    </div>
+                </div> <div class="portfolio-item">
+                    <img src="imga/5.png" alt="Musical Figure">
+                    <div class="portfolio-overlay">
+                        <h3>Stupa-X Gallery</h3>
+                        <p>Stupa-X Gallery </p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imga/6.png" alt="Musical Figure">
+                    <div class="portfolio-overlay">
+                        <h3>Painting Prints</h3>
+                        <p>In order to download this project you must purchase it at or above the minimum price of $200 USD.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imga/7.png" alt="Musical Figure">
+                    <div class="portfolio-overlay">
+                        <h3>Helicopter</h3>
+                        <p>Helicopter Blueprint with Flying AI for UE 5.3 +</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const items = document.querySelectorAll('.portfolio-item');
+            items.forEach(item => {
+                const speed = 0.5;
+                const rect = item.getBoundingClientRect();
+                const visible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (visible) {
+                    const distance = window.innerHeight - rect.top;
+                    const movement = distance * speed;
+                    item.style.transform = `translateY(${movement * 0.05}px)`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
